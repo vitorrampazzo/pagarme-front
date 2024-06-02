@@ -14,7 +14,7 @@ const MovieCard = ({ index }: MovieCardProps) => {
       src='/witcher.jpeg'
       alt={`The Witcher-${index}`}
       fill={true}
-      className='rounded border-gray-200'
+      className='hover:scale-70 transform cursor-pointer rounded object-cover transition duration-200 ease-in'
     />
   );
 };
@@ -31,8 +31,8 @@ export function MovieRow({ sectionTitle }: MovieRowProps) {
         {[1, 2, 3, 4, 5].map((index) => (
           <div
             key={index}
-            className='group relative h-28 min-w-[200px] transform bg-gradient-to-t from-transparent to-black transition duration-200 ease-in hover:z-50 hover:scale-110
-                  md:h-40 md:min-w-[300px] lg:h-52 lg:min-w-[400px]'
+            className='group relative h-28 min-w-[200px] rounded shadow-inner transition duration-200 ease-in
+                  hover:z-50 hover:scale-110 md:h-40 md:min-w-[300px] lg:h-52 lg:min-w-[400px]'
           >
             <MovieCard key={index} index={index} />
           </div>

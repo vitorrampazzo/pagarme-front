@@ -6,7 +6,11 @@ export default function Home() {
   return (
     <div className='relative pb-8'>
       <Header />
-      <main className='relative overflow-y-scroll bg-gradient-to-b p-8 pb-20 scrollbar-hide lg:px-16'>
+      <main
+        className='relative overflow-y-scroll 
+      bg-gradient-to-l from-transparent to-black  
+      p-8 pb-20 scrollbar-hide lg:px-16'
+      >
         <Banner />
         <MovieRow sectionTitle='Wow' />
         <MovieRow sectionTitle='See again' />
